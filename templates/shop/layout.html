@@ -1,13 +1,18 @@
 {% extends "layout.html" %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+{% load static %}
+{% block title %}Shop by Ask Company{% endblock %}
+
+{% block extra_head %}
+{{ block.super }}
+    <link rel="stylesheet" href="{% static "shop/shop.css" %}"/>
     <style>
         body {background-color: lightpink;}
     </style>
+{% endblock %}
 </head>
+{% block extra_body %}
+{{ block.super }}
+{% endblock %}
 <body>
 <h1>Ask Company</h1>
 {% block content %}
