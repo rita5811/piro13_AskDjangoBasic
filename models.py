@@ -2,7 +2,7 @@ from django.db import models
 from django.conf import settings
 
 class Item(models.Model):
-    name = models.CharField(max_length=100, blank=True)
+    name = models.CharField(max_length=100, validators=[])
     desc = models.TextField(blank=True)
     price = models.PositiveIntegerField()
     is_publish = models.BooleanField(default=False)
