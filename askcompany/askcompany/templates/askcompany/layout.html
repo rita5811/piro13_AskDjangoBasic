@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}Shop by Ask Company{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Ask Company{% endblock %}</title>
+    <style>
+        body {background-color: lightpink;}
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+<h1>Ask Company</h1>
+{% block content %}
+{% endblock %}
+
+<hr/>
+&copy; 2018. Ask Company.
+{% block extra_body %}{% endblock %}
+</body>
+</html>
